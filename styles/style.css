@@ -2,14 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 /*---------------- Common -----------------*/
+
 body{
   font-family:'Poppins', sans-serif;
   background-color: #F3F1FF;
+  margin:0;
   
+}
+header{
+  background-color: #562EFF;
+  height: 94px;
+  margin-bottom: 36px;
 }
 main{
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .container{
   display: flex;
@@ -18,6 +26,7 @@ main{
   border-radius: 5px;
   width: 870px;
   padding: 40px;
+  margin-bottom: 21px;
   
 }
 hr{
@@ -81,3 +90,75 @@ hr{
   text-decoration: none;
 }
 
+/* Top Courses */
+
+.courses{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 53px;
+
+}
+.course img{
+  width: 224px;
+  height:104px;
+
+}
+.course-title{
+  color: #1E1E1E;
+  font-size:20px;
+}
+.course-author{
+  color: #ED6B4F;
+  
+}
+.course-info{
+  display: flex;
+  justify-content: space-between;
+}
+.filled{
+  color:#FFC014;
+  
+}
+.unfilled{
+  color:#aeaeae;
+}
+.rating{
+  font-size: 12px;
+}
+
+/* Top-navigation */
+.icon-name{
+  display: flex;
+}
+.icon img{
+  width: 40px;
+  height: 50px;
+}
+.name{
+  font-size: 24px;
+  margin-left: 16px;
+}
+.profile img{
+  width: 51px;
+  height: 51px;
+}
+.menus{
+  display: flex;
+  align-items: center;
+}
+.top{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu{
+  font-size: 16px;
+  font-weight: 400;
+}
+.menu,.profile{
+  margin-left: 36px;
+}
+.name,.menu{
+  color: #FFFFFF;
+}
